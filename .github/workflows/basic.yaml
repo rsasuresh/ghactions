@@ -1,0 +1,17 @@
+name: "basic yaml pipeline"
+
+on: push
+
+jobs:
+  hello_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: sayhello
+        run: echo "hello world"
+  goodbye:
+    runs-on: ubuntu-latest
+    steps:
+      - name: goodbye
+        run: echo "good bye"
+      - name: seeyouagain
+        run: echo "see you again tommorow"
