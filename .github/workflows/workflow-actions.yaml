@@ -1,0 +1,12 @@
+name: using workflow actions
+
+on: push
+
+jobs:
+  actionjob:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v4
+      - name: Print folders
+        run: ls
